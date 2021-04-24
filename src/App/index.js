@@ -26,7 +26,7 @@ function App() {
     } else if (showJoke) {
       setShowPunchLine(true);
       setVisiblePunchLine(jokePunchLine);
-      setButtonText('Get a joke');
+      setButtonText('Get another joke');
     }
   };
 
