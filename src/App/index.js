@@ -4,9 +4,10 @@
 import React, { useState } from 'react';
 import './App.scss';
 import Jokes from '../components/Jokes';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navigation/Navbar';
 import Lyrics from '../components/Lyrics';
 import Weather from '../components/Weather';
+import LordRings from '../components/LordRings';
 
 function App() {
   const [page, setPage] = useState('Jokes');
@@ -31,6 +32,7 @@ function App() {
       { (page === 'jokes-link') && <Jokes /> }
       { (page === 'weather-link') && <Weather /> }
       { (page === 'lyrics-link') && <Lyrics /> }
+      { (page === 'lord-link') && <LordRings /> }
     </div>
   );
 }
