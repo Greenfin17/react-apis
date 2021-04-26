@@ -28,7 +28,7 @@ export default function Jokes() {
   };
 
   return (
-    <div className='App'>
+    <div className='joke-page'>
       <h1>Joke Generator</h1>
       <div className='jokes'>
         <div className='card'>
