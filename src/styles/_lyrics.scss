@@ -1,0 +1,20 @@
+.lyrics-page h1 {
+  margin: 20px 0 50px;
+  text-align: center;
+  color: black;
+}
+
+div.lyrics {
+  display: flex;
+  justify-content: center;
+}
+
+div.lyrics-container {
+  width: 30em;
+  margin: 20px auto;
+}
+
+div.song-lyrics {
+  white-space: pre-line;
+  text-align: left;
+}

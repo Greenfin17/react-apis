@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import './App.scss';
 import Jokes from '../components/Jokes';
 import Navbar from '../components/Navbar';
+import Lyrics from '../components/Lyrics';
 import Weather from '../components/Weather';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Navbar handleClick={navClick} />
       { (page === 'jokes-link') && <Jokes /> }
       { (page === 'weather-link') && <Weather /> }
+      { (page === 'lyrics-link') && <Lyrics /> }
     </div>
   );
 }
