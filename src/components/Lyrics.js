@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import getLyrics from '../helpers/data/lyricsData';
 
-function App() {
+function Lyrics() {
   const [songArtist, setSongArtist] = useState('');
   const [songTitle, setSongTitle] = useState('');
   const [lyrics, setLyrics] = useState('');
@@ -68,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default Lyrics;
