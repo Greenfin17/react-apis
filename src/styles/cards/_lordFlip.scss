@@ -1,0 +1,42 @@
+// lordFlip.scss
+
+// from w3schools.com
+.card.character-card {
+  height: 300px;
+  background-color: #313131;
+  color: white;
+  border: 1px solid #333;
+  perspective: 600px;
+}
+
+.character-card .card-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 rpx 8px 0 rgba(0,0,0,0.2)
+}_
+
+.card__face {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+}
+
+.card__face--front {
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.character-card:hover .card-body {
+  transform: rotateY(180deg);
+}

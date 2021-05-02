@@ -1,0 +1,30 @@
+// _jokes.scss
+
+body.jokes {
+  background-color: black;
+  color: black;
+}
+
+body.home {
+  background-color: white;
+  color: black;
+}
+
+div.jokes, {
+  display: flex;
+  justify-content: center;
+}
+
+div.jokes {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0 50px;
+  text-align: center;
+  color: white;
+}
+
+.homepage-container p {
+  text-align: center;
+}

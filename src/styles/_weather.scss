@@ -1,0 +1,28 @@
+$weather-background: white;
+$weather-text: black;
+
+.weather-page {
+  color: $weather-text;
+  background-color: $weather-background;
+  h1 {
+    color: $weather-text;
+  }
+}
+
+
+.weather-container {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.weather-form-container {
+  margin: 0 0 20px;
+}
+
+.weather-card {
+  height: 400px;
+  background-color: $weather-background;
+  color: $weather-text;
+}

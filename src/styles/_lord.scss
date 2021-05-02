@@ -1,0 +1,15 @@
+@import './cards/lordFlip';
+
+.lord-rings-page h1{
+  margin: 5px 0;
+  color: black;
+}
+
+#lord-nav ul{
+  flex-direction: row;
+  text-align: center;
+}
+
+#lord-nav li {
+  margin: 0 10px;
+}
