@@ -28,15 +28,16 @@ function App() {
 
   return (
     <>
-    <Router>
-      <div className='App' style={{ backgroundColor: backgrColor }}>
-        <Navbar handleClick={navClick} />
-        { (page === 'jokes-link') && <Jokes /> }
-        { (page === 'weather-link') && <Weather /> }
-        { (page === 'lyrics-link') && <Lyrics /> }
-        { (page === 'lord-link') && <LordRings /> }
-      </div>
-    </Router>
+      <Router>
+        <div className='App' style={{ backgroundColor: backgrColor }}>
+          <Navbar handleClick={navClick} />
+          { (page === 'jokes-link') && <Jokes /> }
+          { (page === 'weather-link') && <Weather /> }
+          { (page === 'lyrics-link') && <Lyrics /> }
+          { (page === 'lord-link') && <LordRings /> }
+        </div>
+      </Router>
+    </>
   );
 }
 
