@@ -18,7 +18,6 @@ function Lyrics() {
       artist,
       title
     };
-    console.warn(songObj);
     if (artist && title) {
       getLyrics(songObj).then((song) => {
         if (song) {
