@@ -47,10 +47,7 @@ const getCharacters = () => new Promise((resolve, reject) => {
         resolve(responseArr[0]);
       }
     })
-    .catch((error) => {
-      console.error(error);
-      reject(error);
-    });
+    .catch((error) => reject(error));
 });
 
 const getPagedCharacters = (page, size) => new Promise((resolve, reject) => {
@@ -84,7 +81,24 @@ const getCharactersWithQuotes = () => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
+const getMovies = () => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/movie`, {
+    headers: {
+      Authorization: `Bearer ${apid}`
+    }
+  })
+    .then((response) => {
+      if (response.data) {
+        resolve(response.data);
+      } else {
+        resolve([]);
+      }
+    })
+    .catch((error) => reject(error));
+});
+
 export {
   getCharacters, getPagedCharacters,
-  getQuote, getQuotes, getCharactersWithQuotes
+  getQuote, getQuotes, getCharactersWithQuotes,
+  getMovies
 };

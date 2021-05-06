@@ -9,7 +9,6 @@ const apid = firebaseConfig.weatherApiKey;
 const locationArr = [];
 
 const getWeather = (locationObj) => new Promise((resolve, reject) => {
-  console.warn(firebaseConfig);
   axios.get(`${dbUrl}/weather?q=${locationObj.city}&units=imperial&appid=${apid}`).then((response) => {
     if (response.data) {
       resolve(response.data);
